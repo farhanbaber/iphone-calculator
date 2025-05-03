@@ -1,107 +1,4 @@
-/* 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    font-family: sans-serif;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-  }
-  
-  .container {
-    width: 90vw;
-    max-width: 400px;
-    padding: 1rem;
-  }
-  
-  input#para-inner {
-    width: 100%;
-    height: 12vh;
-    font-size: 2rem;
-    color: white;
-    background-color: black;
-    text-align: left;
-    padding: 0.5rem;
-    border: none;
-    outline: none;
-    margin-bottom: 1rem;
-  }
-  
-  button {
-    font-size: 1.8rem;
-    margin: 0.4em;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    border: none;
-    background-color: rgb(58, 53, 53);
-    color: white;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
-  }
-  
-  #ac {
-    background-color: rgb(95, 94, 94);
-    width: 70px;
-    height: 60px;
-    border-radius: 30px;
-  }
-  
-  .dlt {
-    background-color: rgb(95, 94, 94);
-    width: 70px;
-    height: 60px;
-    border-radius: 30px;
-  }
-  
-  .dvd {
-    background-color: rgb(95, 94, 94);
-  }
-  
-  #yellow {
-    background-color: rgb(255, 208, 0);
-    color: white;
-  }
-  
-  button:active {
-    filter: brightness(50%);
-  }
-  
-  @media (max-width: 600px) {
-    .container {
-      width: 95vw;
-      padding: 0.5rem;
-    }
-  
-    input#para-inner {
-      font-size: 6vw;
-      height: 10vh;
-    }
-  
-    button {
-      font-size: 6vw;
-      width: 20vw;
-      height: 20vw;
-    }
-  
-    #ac, .dlt {
-      width: 22vw;
-      height: 20vw;
-    }
-  }
-   */
-   /* Base Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -185,7 +82,6 @@ button:active {
   color: white;
 }
 
-/* Button Grid */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -196,7 +92,6 @@ button:active {
 /*       MEDIA QUERIES      */
 /* ========================= */
 
-/* Small Mobile Phones (portrait) */
 @media (max-width: 480px) {
   input#para-inner {
     font-size: 1.5rem;
@@ -210,12 +105,12 @@ button:active {
   }
 
   #ac, .dlt {
-    width: 42vw;
+    width: 35vw;
     height: 20vw;
   }
 }
 
-/* Medium Devices (landscape phones & small tablets) */
+
 @media (min-width: 481px) and (max-width: 768px) {
   input#para-inner {
     font-size: 1.8rem;
