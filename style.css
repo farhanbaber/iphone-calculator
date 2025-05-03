@@ -76,6 +76,9 @@ button:active {
 .dvd {
   background-color: rgb(95, 94, 94);
 }
+#ac{
+  grid-column: span 2;
+}
 
 #yellow {
   background-color: rgb(255, 208, 0);
@@ -92,12 +95,8 @@ button:active {
 /*       MEDIA QUERIES      */
 /* ========================= */
 
+/* Mobile - max 480px */
 @media (max-width: 480px) {
-  input#para-inner {
-    font-size: 1.5rem;
-    height: 10vh;
-  }
-
   button {
     font-size: 1.4rem;
     width: 20vw;
@@ -105,18 +104,13 @@ button:active {
   }
 
   #ac, .dlt {
-    width: 35vw;
+    width: 20vw; /* Pehle 35vw tha - reduce kia gaya */
     height: 20vw;
   }
 }
 
-
+/* Tablet Portrait - 481px to 768px */
 @media (min-width: 481px) and (max-width: 768px) {
-  input#para-inner {
-    font-size: 1.8rem;
-    height: 10vh;
-  }
-
   button {
     font-size: 1.6rem;
     width: 16vw;
@@ -124,17 +118,13 @@ button:active {
   }
 
   #ac, .dlt {
-    width: 35vw;
+    width: 16vw; /* Pehle 35vw tha - reduce kia gaya */
     height: 16vw;
   }
 }
 
-/* Tablets and Small Laptops */
+/* Tablet Landscape and small laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
-  input#para-inner {
-    font-size: 2rem;
-  }
-
   button {
     font-size: 1.7rem;
     width: 14vw;
@@ -142,26 +132,7 @@ button:active {
   }
 
   #ac, .dlt {
-    width: 30vw;
+    width: 14vw; /* Pehle 30vw tha - reduce kia gaya */
     height: 14vw;
-  }
-}
-
-/* Desktops */
-@media (min-width: 1025px) {
-  input#para-inner {
-    font-size: 2.2rem;
-    height: 12vh;
-  }
-
-  button {
-    font-size: 1.8rem;
-    width: 60px;
-    height: 60px;
-  }
-
-  #ac, .dlt {
-    width: 70px;
-    height: 60px;
   }
 }
