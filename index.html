@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="para-inner" readonly >
+        <button id="ac" onclick="clearDisplay()">AC</button>
+        <button class="dlt" onclick="del()">DEL</button>
+        <button class="dvd" onclick="display('/')">÷</button>
+        <button id="yellow" onclick="display('*')">x</button>
+        <div class="row-two">
+        <button onclick="display('7')">7</button>
+        <button  onclick="display('8')">8</button>
+        <button  onclick="display('9')">9</button>
+        <button id="yellow"  onclick="display('%')">%</button>
+    </div>
+    <div class="row-three">
+        <button  onclick="display('4')">4</button> 
+        <button  onclick="display('5')">5</button>
+        <button  onclick="display('6')">6</button>
+        <button id="yellow"  onclick="display('-')">-</button>
+    </div>
+    <div class="row-four">
+        <button  onclick="display('1')">1</button>
+        <button  onclick="display('2')">2</button>
+        <button  onclick="display('3')">3</button>
+        <button id="yellow"  onclick="display('+')">+</button>
+    </div>
+
+        <button id="zero"  onclick="display('0')">0</button>
+        <button  onclick="display('.')">.</button>
+
+        <button onclick="calculate()">=</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
