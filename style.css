@@ -1,4 +1,4 @@
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -100,4 +100,173 @@
       height: 20vw;
     }
   }
-  
+   */
+   /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+/* Input Field */
+input#para-inner {
+  width: 100%;
+  height: 12vh;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  text-align: left;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* General Button Styling */
+button {
+  font-size: 1.6rem;
+  margin: 0.4em;
+  border-radius: 50%;
+  width: 18vw;
+  max-width: 60px;
+  height: 18vw;
+  max-height: 60px;
+  border: none;
+  background-color: rgb(58, 53, 53);
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:active {
+  filter: brightness(50%);
+  transform: scale(0.95);
+}
+
+/* Special Buttons */
+#ac,
+.dlt {
+  background-color: rgb(95, 94, 94);
+  width: 20vw;
+  max-width: 70px;
+  height: 18vw;
+  max-height: 60px;
+  border-radius: 30px;
+}
+
+.dvd {
+  background-color: rgb(95, 94, 94);
+}
+
+#yellow {
+  background-color: rgb(255, 208, 0);
+  color: white;
+}
+
+/* Button Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+/* ========================= */
+/*       MEDIA QUERIES      */
+/* ========================= */
+
+/* Small Mobile Phones (portrait) */
+@media (max-width: 480px) {
+  input#para-inner {
+    font-size: 1.5rem;
+    height: 10vh;
+  }
+
+  button {
+    font-size: 1.4rem;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  #ac, .dlt {
+    width: 42vw;
+    height: 20vw;
+  }
+}
+
+/* Medium Devices (landscape phones & small tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  input#para-inner {
+    font-size: 1.8rem;
+    height: 10vh;
+  }
+
+  button {
+    font-size: 1.6rem;
+    width: 16vw;
+    height: 16vw;
+  }
+
+  #ac, .dlt {
+    width: 35vw;
+    height: 16vw;
+  }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  input#para-inner {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.7rem;
+    width: 14vw;
+    height: 14vw;
+  }
+
+  #ac, .dlt {
+    width: 30vw;
+    height: 14vw;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  input#para-inner {
+    font-size: 2.2rem;
+    height: 12vh;
+  }
+
+  button {
+    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  #ac, .dlt {
+    width: 70px;
+    height: 60px;
+  }
+}
